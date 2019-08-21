@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        D-Connect
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+
+</head>
+
+<body>
+    <h1> Add an Event</h1>
+    <div class="row justify-content-center">
+        <div class="col-12">
+            <div class="row mt-4 pt-4 justify-content-center">
+                <form class="col-8">
+                    <div class="form-group">
+                        <label for="feedDetail" class="mr-2">Enter Feed:</label>
+                        <textarea class="form-control" id="feedDetail" rows="3"
+                            placeholder="Enter Feed Text Here"></textarea>
+                    </div>
+                    <div class="row justify-content-center" style="width: 100%;">
+                        <button type="button" class="btn btn-success ml-2" onclick="myCreateEvent()"
+                            style="width: 50%;">
+                            Post
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-12">
+            <div class="row mt-4 pt-4 justify-content-center">
+                <form class="col-8">
+                    <div class="form-group">
+                        <label for="feedDetail" class="mr-2">Existing Events</label>
+                    </div>
+                    <div class="row justify-content-center" style="width: 100%;">
+                        <button type="button" class="btn btn-success ml-2" onclick="getEvent()" style="width: 50%;">
+                            Get
+                        </button>
+                    </div>
+                </form>
+               <div class="row justify-content-center" style="width: 100%;"> 
+                {DATA TO BE ADDED}
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
